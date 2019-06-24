@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="birthday.css">
+   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+<script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="centerText">ANMÄL ER TILL MIN FÖDELSEDAGSMIDDAG</h1>
+        <form class="w3-container" id="form" onsubmit="return form(event)" >
+            <label>Namn</label>
+            <input class="w3-input" type="text" id="name"> <br>
+            <label>Namn på +1 gäst</label>
+            <input class="w3-input" type="text" id="guest"> <br>
+            <label>Email</label>
+            <input class="w3-input" type="email" id="email"> <br>
+            <lable>Allergier eller annat</lable>
+            <textarea class="w3-input" ></textarea> <br>
+            <button>REGISTRERA</button>
+        </form>
+
+        <div class=" registeredUser centerText hidden">
+            <h2>Du har anmält</h2>
+            <p id="nameOne">1.</p> 
+            <p id="nameTwo">2.</p>
+        </div>
+
+
+   
+        
+    </div>
+
+  
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyASnc-WnibHL7y7x65JOOoTkwEOJi-Lkg4",
+    authDomain: "birtday-2662a.firebaseapp.com",
+    databaseURL: "https://birtday-2662a.firebaseio.com",
+    projectId: "birtday-2662a",
+    storageBucket: "birtday-2662a.appspot.com",
+    messagingSenderId: "296047257126",
+    appId: "1:296047257126:web:3de378772325b8f5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+</script>
+ <script src="birthday.js"></script>
+     <body> 
+
+
+        
+</body>
+</html>
