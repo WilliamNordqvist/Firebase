@@ -15,7 +15,7 @@ const form = (event) => {
         email:document.querySelector('#email').value,
         text:document.querySelector('textarea').value
     }]
-    
+     
     
  
     let name = document.querySelector('#name').value
